@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Manual</title>
+</head>
+
+<body>
+    <h1>Git and GitHub for beginners</h1>
+    <p>
+        Learning Git is just as easy as doing some simple commads, knowing what you've to do.
+        we'll start by first creating a folder, so that we can convert it as Git repository.
+        Anything you wanna keep track off, just put it in that folder, and let the know whether you wanna include that
+        perticular thing or not.
+    </p>
+    <b>STEP 1</b>
+    <p>
+
+        let's create the folder, commad for creating the folder is:
+        <br>
+        <i>mkdir git_practice</i>
+        <br>
+        <img src="./resources/Screenshot 2021-10-10 at 6.42.12 PM.png" alt="mkdir img" width="1200" height="200">
+    </p>
+    <b>STEP 2</b>
+    <p>
+        Inititate the Git repository in the folder, the command for Inititating the repository is as simple as
+        <br>
+        <i>git init</i>
+        <br>
+        <img src="./resources/Screenshot 2021-10-10 at 6.49.57 PM.png" alt="init img" width="1200" height="500">
+    </p>
+    <b>STEP 3</b>
+
+    <p>
+        we've created the git repository successfully. Now, we just have to add things in the folder,<br>
+        which we want to be tracked.
+        <br>
+        let's create a file, name <i>user_manual.html</i>
+        <br>
+        comand for creating the file is, <i>touch user_manual.html</i>
+        <img src="./resources/Screenshot 2021-10-10 at 6.58.11 PM.png" alt="create file" width="1200" height="60">
+    </p>
+    <b>STEP 3</b>
+    <p>
+        Now, we've to understand some working of Git.
+        <br>
+        we've created a file in the git repository, in same way, we can add files as much as we want. there are three
+        stages <br>
+        for a git repository,
+    <ul>
+        <li>
+            Add the file in git repository ( simple words, in Git negivation).
+        </li>
+        <li>
+            Stage the current file, so we can have idea what go store in the next commit. Although,this step is optional
+        </li>
+        <li>
+            Commit(store the file permanatly) the file in the Git negivation
+        </li>
+    </ul>
+    while working on the files, we can check the status of files, we also have command for that.
+    <br>
+    let give it a try
+    <br>
+    we've added the file in folder but neither we, add the file git repository nor Commit
+    <br>
+    <img src="./resources/Screenshot 2021-10-10 at 7.06.25 PM.png" alt="git file status" alt="init img" width="1200"
+        height="300">
+
+    <ol>
+        <li>
+            <b>Adding File in Git repository</b>
+            <p>
+                adding the file in git repository is easy with the command,
+                <br>
+                <i>
+                    "git add 'filename'" or "git add ."
+                </i>
+                in our case, it like git add user_manual.html
+                <br>
+                <img src="./resources/Screenshot 2021-10-10 at 7.15.28 PM.png" alt="adding file" width="1100"
+                    height="60">
+            </p>
+        </li>
+        <li>
+            <b>
+                Stage File in git repository
+            </b>
+            <p>
+                adding file in git is necessary but it doesn't meet the requirement. it just now track which file <br>
+                is changes and where. <br>
+                for the file changes to be permanat, we have to either stage the situation of File. Think it as <br>
+                you wanna some more rough work today, but don't want that work to be stored or parmanent <br>
+                So, stage commands will help you achieve this. <br>
+                <i>
+                    git stage
+                </i>
+                <br>
+
+                <img src="./resources/Screenshot 2021-10-10 at 9.48.16 PM.png" alt="stage file" width="1100"
+                    height="60">
+
+            </p>
+        </li>
+        <li>
+            <b>
+                Commit the File
+            </b>
+            <p>
+                last think we have to do is to make all the change patrmaent, git coomit command,
+                <br>
+                can help in this.
+                <br>
+                <i>
+                    git commit .
+                </i>
+                <br>
+                <img src="./resources/Screenshot 2021-10-10 at 9.53.28 PM.png" alt="commit" width="1200" height="200">
+            </p>
+        </li>
+    </ol>
+    </p>
+    <h2>
+        GitHub work
+    </h2>
+    <p>
+        we're done with git work keeping things as simple as possible, now we're moving towards GitHub <br>
+        GitHub is the GUI version of Git, it make the things bit simple for bigenner but the recommended is Git with
+        termianl <br>
+        but GitHub on the cloud provided the only storage for your local project, which too awosome. <br>
+
+        things to do:
+    <ol>
+        <li>
+            create GitHub account
+        </li>
+        <li>
+            create new repository. optional
+        </li>
+        <li>
+            connect to remote termianl
+        </li>
+        <li>
+            push your work to the cloud
+        </li>
+    </ol>
+    <br>
+    I'm ommiting the creating account STEP, only start form connecting the git to cloud
+    <b>
+        Connecting the git to cloud
+    </b>
+    <p>
+        it as easy as basic command.
+        <i>
+            git remote add origin git@github.com:username/
+        </i>
+        <br>
+        in our case,it like 
+        <i>
+            git remote add origin git@github.com:nobody4591/
+        </i>
+        <br>
+        <img src="./resources/Screenshot 2021-10-10 at 9.53.28 PM.png" alt="connection" width="1200" height="60" >
+    </p>
+    <br>
+    <b>
+        push the work to cloud
+    </b>
+    <p>
+        it same commad simple command
+        <br>
+        <i>
+            git push
+        </i>
+        <br>
+        <img src="" alt="">
+    </p>
+    </p>
+</body>
+
+</html>
